@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reunyt</title>
+  <meta name="description" content="Reunyt connects people who lose things with the people who find them. Coming soon to the App Store.">
+  <meta name="color-scheme" content="light dark">
+  <style>
+    :root {
+      --bg: #f6f4ef;
+      --fg: #1c1b19;
+      --muted: #6b675f;
+      --accent: #c2410c;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #141311;
+        --fg: #f2efe8;
+        --muted: #a39e94;
+        --accent: #fb923c;
+      }
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; margin: 0; }
+    body {
+      background: var(--bg);
+      color: var(--fg);
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      display: grid;
+      place-items: center;
+      padding: 24px 16px;
+    }
+    main { max-width: 32rem; text-align: center; }
+    h1 {
+      font-size: clamp(2.75rem, 10vw, 4.5rem);
+      letter-spacing: -0.03em;
+      margin: 0 0 0.75rem;
+      font-weight: 700;
+    }
+    h1 span { color: var(--accent); }
+    p { margin: 0.25rem 0; font-size: 1.125rem; line-height: 1.5; }
+    .muted { color: var(--muted); font-size: 1rem; margin-top: 1rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Reunyt<span>.</span></h1>
+    <p>Lost things, found again.</p>
+    <p class="muted">Coming soon to the App Store.</p>
+  </main>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Email confirmed · Reunyt</title>
+  <meta name="robots" content="noindex">
+  <meta name="referrer" content="no-referrer">
+  <meta name="color-scheme" content="light dark">
+  <style>
+    :root {
+      --bg: #f6f4ef;
+      --fg: #1c1b19;
+      --muted: #6b675f;
+      --accent: #c2410c;
+      --ok: #15803d;
+      --warn: #b45309;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #141311;
+        --fg: #f2efe8;
+        --muted: #a39e94;
+        --accent: #fb923c;
+        --ok: #4ade80;
+        --warn: #fbbf24;
+      }
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; margin: 0; }
+    body {
+      background: var(--bg);
+      color: var(--fg);
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      display: grid;
+      place-items: center;
+      padding: 24px 16px;
+    }
+    main { max-width: 30rem; text-align: center; }
+    .brand { font-weight: 700; letter-spacing: -0.02em; font-size: 1.25rem; margin-bottom: 2rem; }
+    .brand span { color: var(--accent); }
+    .mark { font-size: 3rem; line-height: 1; margin-bottom: 1rem; }
+    .ok .mark { color: var(--ok); }
+    .error .mark { color: var(--warn); }
+    h1 { font-size: 1.75rem; margin: 0 0 0.75rem; letter-spacing: -0.01em; }
+    p { margin: 0.5rem 0; font-size: 1.0625rem; line-height: 1.55; }
+    .muted { color: var(--muted); font-size: 0.95rem; }
+    [hidden] { display: none !important; }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="brand">Reunyt<span>.</span></div>
+
+    <section id="success" class="ok">
+      <div class="mark" aria-hidden="true">✓</div>
+      <h1>Your email is confirmed</h1>
+      <p>Go back to the Reunyt app and sign in with your email and password.</p>
+      <p class="muted">You can close this page.</p>
+    </section>
+
+    <section id="failure" class="error" hidden>
+      <div class="mark" aria-hidden="true">!</div>
+      <h1 id="failure-title">This link didn't work</h1>
+      <p id="failure-body">Open the Reunyt app, try to sign in, and tap Resend Email to get a new confirmation link.</p>
+      <p class="muted">Links expire after a while and can only be used once.</p>
+    </section>
+  </main>
+
+  <script>
+    // Supabase redirects here after verifying the email. On failure it adds
+    // error details to the URL (query string or fragment), e.g.
+    // #error=access_denied&error_code=otp_expired. On success it may add a
+    // one-time ?code=... for the app; this page never uses it.
+    (function () {
+      var params = new URLSearchParams(window.location.search);
+      var hash = new URLSearchParams(window.location.hash.replace(/^#/, ""));
+      var error = params.get("error") || hash.get("error");
+      var code = params.get("error_code") || hash.get("error_code");
+
+      if (error || code) {
+        document.getElementById("success").hidden = true;
+        document.getElementById("failure").hidden = false;
+        document.title = "Link problem · Reunyt";
+        if (code === "otp_expired") {
+          document.getElementById("failure-title").textContent = "This link has expired";
+        }
+      }
+
+      // Remove codes and error details from the address bar and history.
+      if (window.location.search || window.location.hash) {
+        history.replaceState(null, "", window.location.pathname);
+      }
+    })();
+  </script>
+</body>
+</html>

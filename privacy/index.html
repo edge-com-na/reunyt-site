@@ -50,6 +50,7 @@
         <li>Other people only ever see an approximate area about 500 m across, never the exact spot.</li>
         <li>Document and card numbers are never shown to anyone. They are only used to find an exact match.</li>
         <li>Voice input is turned into text on your phone. The audio never leaves it.</li>
+        <li>Pet photos are shrunk on your phone and stripped of hidden details, including where they were taken, before they're uploaded.</li>
         <li>We don't sell your information, show ads or track you across other apps.</li>
         <li>You can delete your account in the app at any time.</li>
       </ul>
@@ -88,6 +89,8 @@
       <li><strong>Hand-ins and thanks:</strong> where and when a found item was handed in, whether the owner collected it or found it wasn't there, and any thank-you note.</li>
       <li><strong>Safety:</strong> reports you make about other users or content (the reason, any note, and a copy of what you reported), people you block, and our decisions on reports.</li>
       <li><strong>Settings:</strong> your alert radius for nearby matches. Other defaults, such as where Browse starts, stay on your phone.</li>
+      <li><strong>Pet photos:</strong> one photo of the animal on a pet post. A found pet's photo is taken in the app. A lost pet's photo can be taken in the app or chosen from your photos, and Reunyt receives only the photo you choose. Before it leaves your phone, the photo is shrunk and every hidden detail is removed, including where and when it was taken and the camera used.</li>
+      <li><strong>Where a found pet's photo was taken:</strong> when you post a found pet, we record where your phone was when you took its photo, if location is allowed for Reunyt. It's kept private, never shown to anyone, and used only to check reports of misuse, such as fake finds.</li>
       <li><strong>My area:</strong> if you choose to watch an area, we keep only an area about 500 m across, never the exact spot, and the distance you choose, to send you at most 3 alerts a day.</li>
       <li><strong>Notify me:</strong> the posts you choose to follow. This is private: a post's owner sees only how many people are looking out for it, never who.</li>
       <li><strong>Messages to us:</strong> anything you send us, for example by email.</li>
@@ -100,15 +103,16 @@
     </ul>
 
     <h3>What we don't collect</h3>
-    <p>We don't use advertising, we don't track you across other apps or websites, and there are no analytics or advertising tools in the app. We don't access your contacts or your photo library.</p>
+    <p>We don't use advertising, we don't track you across other apps or websites, and there are no analytics or advertising tools in the app. We don't access your contacts, and we never see your photo library as a whole: when you choose a photo for a lost pet, Reunyt receives only that one photo.</p>
 
     <h2 id="phone">3. Phone permissions</h2>
     <p>Reunyt only asks for a permission when you use the feature that needs it. You can change any of these at any time in your phone's Settings.</p>
     <div class="table-scroll"><table>
       <thead><tr><th>Permission</th><th>What it's used for</th></tr></thead>
       <tbody>
-        <tr><td>Location (while using the app)</td><td>To place a report where you are, to search near you, and to show the nearest hand-in points first. Your current position is used for the search and is not stored, unless you choose it as the place of a report.</td></tr>
-        <tr><td>Camera</td><td>Only to scan the owner's handover code when you give back something you found. Nothing is recorded or kept.</td></tr>
+        <tr><td>Location (while using the app)</td><td>To place a report where you are, to search near you, and to show the nearest hand-in points first. Your current position is used for the search and is not stored, unless you choose it as the place of a report, or you post a found pet (see above).</td></tr>
+        <tr><td>Camera</td><td>To scan the owner's handover code when you give back something you found, and to take a photo of a pet you post. Only the photo you take for a post is kept.</td></tr>
+        <tr><td>Photos</td><td>Only when you choose a photo for a lost pet. Apple's photo picker gives Reunyt just the one photo you pick, never your library.</td></tr>
         <tr><td>Microphone and speech recognition</td><td>So you can speak instead of type. Your words are turned into text on your phone. No audio leaves your phone.</td></tr>
         <tr><td>Notifications</td><td>To tell you about possible matches, claims, messages and items handed in, and, if you choose, new posts in an area you watch and updates on posts you follow. Notifications never contain item details, names or locations.</td></tr>
       </tbody>
@@ -132,7 +136,7 @@
     <div class="table-scroll"><table>
       <thead><tr><th>Who</th><th>What they see</th></tr></thead>
       <tbody>
-        <tr><td>Other Reunyt users</td><td>Your display name and profile icon, and your reports' category, title, description and date, with only an approximate area about 500 m across and a rounded distance. Never your email, the exact location, a document or card number, or your reference numbers.</td></tr>
+        <tr><td>Other Reunyt users</td><td>Your display name and profile icon, and your reports' category, title, description, date and, for a pet, its photo, with only an approximate area about 500 m across and a rounded distance. Never your email, the exact location, where a found pet's photo was taken, a document or card number, or your reference numbers.</td></tr>
         <tr><td>A finder whose item you claim</td><td>Your display name, your answers to their questions and your note.</td></tr>
         <tr><td>The other person, after a claim is accepted</td><td>The messages you send each other and the handover point you choose.</td></tr>
         <tr><td>The owner of a handed-in ID or bank card</td><td>Where and when it was handed in, if their lost report matches it. The finder's name is not shown.</td></tr>
@@ -147,7 +151,7 @@
     <ul>
       <li><strong>Service providers</strong> who run parts of Reunyt for us and may only use your information to do so:
         <ul>
-          <li>Supabase, for our database, sign-in and server functions;</li>
+          <li>Supabase, for our database, photo storage, sign-in and server functions;</li>
           <li>Apple, to deliver push notifications and for map place search (searches you type are sent to Apple Maps);</li>
           <li>Resend, to deliver emails: the confirmation email you get when you sign up, and abuse reports sent to us.</li>
         </ul>
@@ -158,7 +162,7 @@
     </ul>
 
     <h2 id="transfers">7. Where it is stored</h2>
-    <p>Our database is hosted by Supabase in the European Union (Ireland). Some of our service providers process information in other countries, including the United States. This means your information is stored and processed outside Namibia. We choose providers that protect information to a high standard, and we only share what each needs.</p>
+    <p>Our database and pet photos are hosted by Supabase in the European Union (Ireland). Some of our service providers process information in other countries, including the United States. This means your information is stored and processed outside Namibia. We choose providers that protect information to a high standard, and we only share what each needs.</p>
 
     <h2 id="keep">8. How long we keep it</h2>
     <div class="table-scroll"><table>
@@ -170,6 +174,8 @@
         <tr><td>Records of notifications sent</td><td>Deleted after 30 days</td></tr>
         <tr><td>The area you watch (My area)</td><td>Until you turn it off or delete your account</td></tr>
         <tr><td>Posts you follow</td><td>Until you stop following, the post expires, or you delete your account</td></tr>
+        <tr><td>Pet photos</td><td>Deleted 30 days after the post is closed or expires, or after it's removed for breaking our rules. A photo that was never posted is deleted after 24 hours</td></tr>
+        <tr><td>Where a found pet's photo was taken</td><td>Deleted with the photo, and at once when you delete your account</td></tr>
         <tr><td>Push notification tokens</td><td>Until you sign out on that phone or delete your account</td></tr>
         <tr><td>Server logs</td><td>For a short period set by our hosting provider</td></tr>
       </tbody>
@@ -178,7 +184,7 @@
     <h3>When you delete your account</h3>
     <p>You can delete your account in the app's settings. It takes effect straight away.</p>
     <ul>
-      <li><strong>Deleted at once:</strong> your account, email, profile, settings, push tokens, thank-you notes, your lost reports with their exact locations and document numbers, and the exact locations of your finds.</li>
+      <li><strong>Deleted at once:</strong> your account, email, profile, settings, push tokens, thank-you notes, your lost reports with their exact locations, document numbers and photos (photos within a day), the exact locations of your finds, and where your found-pet photos were taken.</li>
       <li><strong>Kept without your name for up to 90 days:</strong> found items you handed in that haven't been collected yet, so their owners can still find and collect them; your closed claims and finds; and messages you sent, which stay with the other person marked as from "Deleted account". After 90 days these are deleted too.</li>
       <li><strong>Reports of abuse:</strong> reports you made are deleted with your account. Reports other people made about you are kept, without a link to your account, until we review them and for 90 days after, so we can deal with safety issues.</li>
     </ul>
@@ -187,6 +193,7 @@
     <h2 id="security">9. How we protect it</h2>
     <ul>
       <li>Everything sent between the app and our servers is encrypted.</li>
+      <li>Pet photos are stored privately. Only people who can see the post can load its photo, and nobody can change or replace it.</li>
       <li>Messages can only be read by the two people in a claim, and they're deleted 90 days after the claim closes.</li>
       <li>Our hosting provider encrypts stored data.</li>
       <li>Rules inside our database decide who can read each piece of information, so the app can't be used to read anything you aren't allowed to see. Exact locations and document numbers can't be read by any user at all.</li>

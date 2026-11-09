@@ -157,9 +157,62 @@
           </ul>
           <p><a href="/privacy/">Read the Privacy Policy</a></p>
         </div>
-        <div class="area-map" aria-hidden="true">
-          <div class="area"><span>About 500 m across</span></div>
-        </div>
+        <figure class="privacy-demo" aria-label="The same report twice. You see the exact spot on the map; everyone else sees only a shaded area about 500 m across, with no pin.">
+          <svg width="0" height="0" style="position: absolute;" aria-hidden="true" focusable="false">
+            <defs>
+              <symbol id="town" viewBox="0 0 260 190">
+                <rect width="260" height="190" fill="#E7F1EF"/>
+                <rect x="14" y="12" width="58" height="40" rx="5" fill="#F8FBFB"/>
+                <rect x="14" y="66" width="58" height="52" rx="5" fill="#F8FBFB"/>
+                <rect x="14" y="132" width="58" height="46" rx="5" fill="#F8FBFB"/>
+                <rect x="88" y="12" width="76" height="40" rx="5" fill="#D3E9DD"/>
+                <rect x="88" y="66" width="76" height="52" rx="5" fill="#F8FBFB"/>
+                <rect x="104" y="80" width="44" height="24" rx="3" fill="#EEF4F4"/>
+                <rect x="88" y="132" width="76" height="46" rx="5" fill="#F8FBFB"/>
+                <rect x="180" y="12" width="68" height="40" rx="5" fill="#F8FBFB"/>
+                <rect x="180" y="66" width="68" height="112" rx="5" fill="#F8FBFB"/>
+                <rect x="194" y="80" width="40" height="30" rx="3" fill="#EEF4F4"/>
+                <rect x="194" y="124" width="40" height="40" rx="3" fill="#EEF4F4"/>
+                <path d="M0 59H260M0 125H260M80 0V190M172 0V190" stroke="#FFFFFF" stroke-width="9"/>
+                <path d="M-10 196C40 150 70 150 120 168S220 150 270 108" fill="none" stroke="#FFFFFF" stroke-width="5"/>
+                <circle cx="118" cy="32" r="7" fill="#BFDFCD"/><circle cx="138" cy="38" r="9" fill="#BFDFCD"/>
+              </symbol>
+              <radialGradient id="haze" cx="50%" cy="50%" r="50%">
+                <stop offset="0" stop-color="#2E9C88" stop-opacity="0.32"/>
+                <stop offset="0.7" stop-color="#2E9C88" stop-opacity="0.18"/>
+                <stop offset="1" stop-color="#2E9C88" stop-opacity="0.08"/>
+              </radialGradient>
+            </defs>
+          </svg>
+
+          <div class="views">
+            <div class="view">
+              <p class="view-label"><span class="who who-you">You</span>What you post</p>
+              <svg class="view-map" viewBox="0 0 260 190" aria-hidden="true" focusable="false">
+                <use href="#town"/>
+                <ellipse cx="126" cy="92" rx="9" ry="3.5" fill="#0F2F36" opacity="0.18"/>
+                <svg x="113" y="58" width="26" height="34" viewBox="242 162 540 713"><path transform="translate(-22 0)" fill-rule="evenodd" fill="#0F4C5C" d="M512 182 A228 228 0 0 0 316.2 526.82 L496.63 829.24 Q512 855 512 825 Z M512 322 A88 88 0 0 0 512 498 Z"/><path transform="translate(22 0)" fill-rule="evenodd" fill="#2E9C88" d="M512 182 A228 228 0 0 1 707.8 526.82 L527.37 829.24 Q512 855 512 825 Z M512 322 A88 88 0 0 1 512 498 Z"/></svg>
+              </svg>
+              <p class="view-note">The exact spot. Kept locked away, and never shown to anyone.</p>
+            </div>
+            <div class="view">
+              <p class="view-label"><span class="who who-them">Others</span>What everyone else sees</p>
+              <svg class="view-map" viewBox="0 0 260 190" aria-hidden="true" focusable="false">
+                <use href="#town"/>
+                <circle cx="140" cy="100" r="62" fill="url(#haze)" stroke="#2E9C88" stroke-width="1.5" stroke-dasharray="5 4"/>
+                <rect x="96" y="88" width="88" height="24" rx="12" fill="#FFFFFF" stroke="#C9D8DA"/>
+                <text x="140" y="104.5" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#0F2F36">About 500 m</text>
+              </svg>
+              <p class="view-note">Only a shaded area, never a pin, so nobody can find where you were.</p>
+            </div>
+          </div>
+
+          <div class="listing" aria-hidden="true">
+            <span class="listing-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2.5" width="12" height="19" rx="2.5"/><path d="M11 18h2"/></svg></span>
+            <span class="listing-text"><b>Black phone</b><small>Lost on Tuesday · About 2 km away</small></span>
+            <span class="listing-tag">No exact spot, no numbers</span>
+          </div>
+        </figure>
       </div>
     </section>
 

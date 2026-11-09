@@ -1,56 +1,265 @@
 <!doctype html>
-<html lang="en">
+<html lang="en-GB">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Reunyt</title>
-  <meta name="description" content="Reunyt connects people who lose things with the people who find them. Coming soon to the App Store.">
-  <meta name="color-scheme" content="light dark">
-  <style>
-    :root {
-      --bg: #f6f4ef;
-      --fg: #1c1b19;
-      --muted: #6b675f;
-      --accent: #c2410c;
-    }
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg: #141311;
-        --fg: #f2efe8;
-        --muted: #a39e94;
-        --accent: #fb923c;
-      }
-    }
-    * { box-sizing: border-box; }
-    html, body { height: 100%; margin: 0; }
-    body {
-      background: var(--bg);
-      color: var(--fg);
-      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      display: grid;
-      place-items: center;
-      padding: 24px 16px;
-    }
-    main { max-width: 32rem; text-align: center; }
-    h1 {
-      font-size: clamp(2.75rem, 10vw, 4.5rem);
-      letter-spacing: -0.03em;
-      margin: 0 0 0.75rem;
-      font-weight: 700;
-    }
-    h1 span { color: var(--accent); }
-    p { margin: 0.25rem 0; font-size: 1.125rem; line-height: 1.5; }
-    .muted { color: var(--muted); font-size: 1rem; margin-top: 1rem; }
-    .links { margin-top: 2.5rem; font-size: 0.9rem; }
-    .links a { color: var(--muted); }
-  </style>
+  <title>Reunyt · Lost things, found again</title>
+  <meta name="description" content="Reunyt connects people who lose things with the people who find them, and helps them hand over somewhere safe. Coming soon to iPhone.">
+  <meta name="referrer" content="no-referrer">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#0F4C5C">
+  <link rel="icon" href="/favicon.ico" sizes="48x48">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="https://use.typekit.net/akp5rmp.css">
+  <link rel="stylesheet" href="/assets/site.css">
 </head>
 <body>
-  <main>
-    <h1>Reunyt<span>.</span></h1>
-    <p>Lost things, found again.</p>
-    <p class="muted">Coming soon to the App Store.</p>
-    <p class="links"><a href="/privacy/">Privacy Policy</a> · <a href="/terms/">Terms of Use</a></p>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="/" aria-label="Reunyt home"><svg viewBox="242 162 540 713" aria-hidden="true" focusable="false"><path transform="translate(-22 0)" fill-rule="evenodd" fill="#0F4C5C" d="M512 182 A228 228 0 0 0 316.2 526.82 L496.63 829.24 Q512 855 512 825 Z M512 322 A88 88 0 0 0 512 498 Z"/><path transform="translate(22 0)" fill-rule="evenodd" fill="#2E9C88" d="M512 182 A228 228 0 0 1 707.8 526.82 L527.37 829.24 Q512 855 512 825 Z M512 322 A88 88 0 0 1 512 498 Z"/></svg><span>reunyt</span></a>
+      <nav class="nav" aria-label="Main">
+        <a href="/#how">How it works</a>
+        <a href="/support/">Support</a>
+        <a href="/partners/">For organisations</a>
+      </nav>
+      <a class="btn btn-primary btn-sm header-cta" href="mailto:reunyt@edge.com.na">Contact us</a>
+      <details class="menu">
+        <summary aria-label="Menu"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></summary>
+        <nav class="menu-panel" aria-label="Menu">
+          <a href="/">Home</a>
+          <a href="/#how">How it works</a>
+          <a href="/support/">Support</a>
+          <a href="/partners/">For organisations</a>
+          <hr>
+          <a href="mailto:reunyt@edge.com.na">Contact us</a>
+        </nav>
+      </details>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="wrap">
+        <div class="hero-copy">
+          <p class="pill"><span class="dot" aria-hidden="true"></span>Coming soon to iPhone</p>
+          <h1 id="hero-title">Lost things, found again.</h1>
+          <p class="lead">Reunyt connects people who lose things with the people who find them, then helps them hand over somewhere safe.</p>
+          <div class="btn-row">
+            <a class="btn btn-primary" href="#how">How it works</a>
+            <a class="btn btn-secondary" href="/support/">Questions? Get support</a>
+          </div>
+          <ul class="checks">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Others only see an area about 500 m across</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Talk in the app, never swap numbers</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Found IDs are handed in at a counter</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>No ads, and nothing sold</li>
+          </ul>
+        </div>
+
+        <div class="panel" aria-hidden="true">
+          <div class="panel-bar"><i></i><i></i><i></i><span>Reunyt · Mine</span></div>
+          <div class="panel-body">
+            <div class="phone-side">
+              <div class="phone">
+                <div class="phone-top">Mine</div>
+                <div class="phone-list">
+                  <p class="phone-label">Needs you</p>
+                  <div class="phone-card">
+                    <small>ID card · RY-7K3QP</small>
+                    <b>Your ID card has been found</b>
+                    <small>Handed in at a police station near you.</small>
+                    <span class="phone-btn">Where to collect it</span>
+                  </div>
+                  <p class="phone-label">Your reports</p>
+                  <div class="phone-card">
+                    <b>Black phone, Maerua Mall</b>
+                    <small>Lost · 2 possible matches</small>
+                  </div>
+                </div>
+                <div class="phone-tabs"><span>Browse</span><span>Post</span><b>Mine</b><span>Profile</span></div>
+              </div>
+            </div>
+            <div class="info-side">
+              <span class="tag">Exact match</span>
+              <p class="info-title">Your ID card has been found</p>
+              <div class="facts">
+                <div><small>Reference</small><strong>RY-7K3QP</strong></div>
+                <div><small>Status</small><strong>Handed in</strong></div>
+              </div>
+              <ul class="steps-mini">
+                <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span>A finder posts it and hands it in</li>
+                <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 8 3 8H3s3-1 3-8"/><path d="M10 20a2 2 0 0 0 4 0"/></svg></span>The owner's number matches, and they're told</li>
+                <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="12" r="2"/><path d="M14 10h4M14 14h3"/></svg></span>They collect it at the counter with proof of identity</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="how" aria-labelledby="how-title">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">How it works</p>
+          <h2 id="how-title">From lost to back in your hands.</h2>
+          <p>Post what you lost or found. Reunyt does the matching and keeps both of you safe until it's handed over.</p>
+        </div>
+        <ol class="grid grid-4" style="list-style: none; margin: 0; padding: 0;">
+          <li class="card">
+            <div class="card-top">
+              <span class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></span>
+              <span class="card-num" aria-hidden="true">01</span>
+            </div>
+            <h3>Post it</h3>
+            <p>Say what you lost or found, when, and where. Use your location, drop a pin or search for a place. Speak instead of typing if you like.</p>
+          </li>
+          <li class="card">
+            <div class="card-top">
+              <span class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M20 20l-4.2-4.2"/></svg></span>
+              <span class="card-num" aria-hidden="true">02</span>
+            </div>
+            <h3>Get matched</h3>
+            <p>Reunyt shows possible matches nearby. For an ID card, passport, driving licence or bank card, the number you type finds the exact one.</p>
+          </li>
+          <li class="card">
+            <div class="card-top">
+              <span class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></svg></span>
+              <span class="card-num" aria-hidden="true">03</span>
+            </div>
+            <h3>Prove it's yours</h3>
+            <p>Answer the finder's questions about the item. The finder decides, and only then can the two of you message in the app.</p>
+          </li>
+          <li class="card">
+            <div class="card-top">
+              <span class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v5c0 4.5-3 8.3-7 10-4-1.7-7-5.5-7-10V6z"/><path d="M9 12l2 2 4-4"/></svg></span>
+              <span class="card-num" aria-hidden="true">04</span>
+            </div>
+            <h3>Hand over safely</h3>
+            <p>Meet at a police station or another busy public place. The owner shows a handover code, and the finder scans or types it to finish.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section section-white" id="privacy" aria-labelledby="privacy-title">
+      <div class="wrap split">
+        <div class="split-copy">
+          <p class="eyebrow">Privacy first</p>
+          <h2 id="privacy-title">Your exact spot stays private.</h2>
+          <p class="lead">Others only ever see an area about 500 m across, never the place you were standing. You talk inside the app, so nobody swaps phone numbers or emails with a stranger.</p>
+          <ul class="checks checks-1">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Document and card numbers are never shown to anyone</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Messages open only after the finder accepts a claim</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Report or block anyone. We review reports within 24 hours</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>No ads, no tracking, and you can delete your account at any time</li>
+          </ul>
+          <p><a href="/privacy/">Read the Privacy Policy</a></p>
+        </div>
+        <div class="area-map" aria-hidden="true">
+          <div class="area"><span>About 500 m across</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="finders-title">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">For finders</p>
+          <h2 id="finders-title">Found something? Doing the right thing takes a minute.</h2>
+          <p>Post it, and Reunyt shows you the easiest way to get it back to its owner.</p>
+        </div>
+        <div class="grid grid-2">
+          <div class="card">
+            <span class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2.5" width="12" height="19" rx="2.5"/><path d="M11 18h2"/></svg></span>
+            <h3>Phones, wallets, keys and bags</h3>
+            <p>Add a question or two only the owner could answer. You read the answers and decide who gets it back. Never ask for a PIN: for a phone, ask the owner to unlock it in front of you.</p>
+          </div>
+          <div class="card">
+            <span class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="12" r="2"/><path d="M14 10h4M14 14h3"/></svg></span>
+            <h3>ID documents and bank cards</h3>
+            <p>Hand them in at a police station or Home Affairs office, with the reference number on a note. The owner is told where, and shows proof of identity at the counter.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-white" aria-labelledby="alerts-title">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Stay in the loop</p>
+          <h2 id="alerts-title">Hear about it without checking.</h2>
+          <p>Notifications only say what happened. They never include item details, names or places.</p>
+        </div>
+        <div class="grid grid-3">
+          <div class="card card-quiet">
+            <h3>Possible matches</h3>
+            <p>When something that could be yours is posted nearby, or your ID is handed in.</p>
+          </div>
+          <div class="card card-quiet">
+            <h3>My area</h3>
+            <p>Watch one area, like your neighbourhood, within 1, 2 or 5 km. At most 3 alerts a day.</p>
+          </div>
+          <div class="card card-quiet">
+            <h3>Notify me</h3>
+            <p>Follow someone else's post and hear when it's reunited. The owner only sees how many people are looking out.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="cta-title">
+      <div class="wrap">
+        <div class="cta-box">
+          <h2 id="cta-title">Coming soon to the App Store.</h2>
+          <p>Reunyt is getting ready for iPhone. Questions in the meantime? We reply within two working days.</p>
+          <div class="btn-row">
+            <a class="btn btn-primary" href="mailto:reunyt@edge.com.na">Email reunyt@edge.com.na</a>
+            <a class="btn btn-secondary" href="/partners/">For organisations</a>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-top">
+        <div class="footer-about">
+          <a class="brand" href="/" aria-label="Reunyt home"><svg viewBox="242 162 540 713" aria-hidden="true" focusable="false"><path transform="translate(-22 0)" fill-rule="evenodd" fill="#0F4C5C" d="M512 182 A228 228 0 0 0 316.2 526.82 L496.63 829.24 Q512 855 512 825 Z M512 322 A88 88 0 0 0 512 498 Z"/><path transform="translate(22 0)" fill-rule="evenodd" fill="#2E9C88" d="M512 182 A228 228 0 0 1 707.8 526.82 L527.37 829.24 Q512 855 512 825 Z M512 322 A88 88 0 0 1 512 498 Z"/></svg><span>reunyt</span></a>
+          <p>Lost things, found again. Reunyt connects people who lose things with the people who find them. Coming soon to iPhone.</p>
+        </div>
+        <nav class="footer-col" aria-labelledby="f-reunyt">
+          <h2 id="f-reunyt">Reunyt</h2>
+          <a href="/#how">How it works</a>
+          <a href="/#privacy">Privacy first</a>
+          <a href="/partners/">For organisations</a>
+        </nav>
+        <nav class="footer-col" aria-labelledby="f-help">
+          <h2 id="f-help">Help</h2>
+          <a href="/support/">Support</a>
+          <a href="/support/#safety">Safety</a>
+          <a href="/support/#account">Delete your account</a>
+        </nav>
+        <nav class="footer-col" aria-labelledby="f-legal">
+          <h2 id="f-legal">Legal</h2>
+          <a href="/privacy/">Privacy Policy</a>
+          <a href="/terms/">Terms of Use</a>
+          <a href="mailto:reunyt@edge.com.na">reunyt@edge.com.na</a>
+        </nav>
+      </div>
+      <div class="footer-band">
+        <div>
+          <strong>Shelters, vets and lost-property desks</strong>
+          <span>We're building tools for places that take in found things and animals.</span>
+        </div>
+        <a class="btn btn-secondary btn-sm" href="/partners/">For organisations</a>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Edge Technology Solutions (Pty) Ltd</p>
+        <p>Reunyt is independent. It isn't run by the police or any government office.</p>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

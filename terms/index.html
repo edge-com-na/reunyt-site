@@ -1,65 +1,45 @@
 <!doctype html>
-<html lang="en">
+<html lang="en-GB">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Terms of Use · Reunyt</title>
   <meta name="description" content="The terms that apply when you use Reunyt, the app that connects people who lose things with the people who find them.">
-  <meta name="color-scheme" content="light dark">
-  <style>
-    :root {
-      --bg: #f6f4ef;
-      --fg: #1c1b19;
-      --muted: #6b675f;
-      --accent: #c2410c;
-      --rule: #e2ded5;
-      --panel: #efece5;
-    }
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg: #141311;
-        --fg: #f2efe8;
-        --muted: #a39e94;
-        --accent: #fb923c;
-        --rule: #2c2a26;
-        --panel: #1d1c19;
-      }
-    }
-    * { box-sizing: border-box; }
-    html { -webkit-text-size-adjust: 100%; }
-    body {
-      margin: 0;
-      background: var(--bg);
-      color: var(--fg);
-      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      font-size: 1.0625rem;
-      line-height: 1.6;
-      padding: 32px 20px 64px;
-    }
-    main { max-width: 44rem; margin: 0 auto; }
-    .brand { font-weight: 700; letter-spacing: -0.02em; font-size: 1.25rem; margin-bottom: 2rem; }
-    .brand a { color: inherit; text-decoration: none; }
-    .brand span { color: var(--accent); }
-    h1 { font-size: 2rem; letter-spacing: -0.02em; line-height: 1.2; margin: 0 0 0.5rem; }
-    h2 { font-size: 1.25rem; letter-spacing: -0.01em; margin: 2.5rem 0 0.5rem; padding-top: 1.5rem; border-top: 1px solid var(--rule); }
-    h3 { font-size: 1.0625rem; margin: 1.5rem 0 0.25rem; }
-    p, li { margin: 0.5rem 0; }
-    ul { padding-left: 1.25rem; }
-    a { color: var(--accent); }
-    .muted { color: var(--muted); font-size: 0.95rem; }
-    .summary { background: var(--panel); border-radius: 12px; padding: 1rem 1.25rem; margin: 1.5rem 0; }
-    .summary p:first-child { margin-top: 0; }
-    .summary ul { margin-bottom: 0; }
-    nav ol { padding-left: 1.5rem; columns: 2; column-gap: 2rem; }
-    nav li { margin: 0.2rem 0; break-inside: avoid; }
-    @media (max-width: 34rem) { nav ol { columns: 1; } }
-    footer { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--rule); }
-  </style>
+  <meta name="referrer" content="no-referrer">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#0F4C5C">
+  <link rel="icon" href="/favicon.ico" sizes="48x48">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="https://use.typekit.net/akp5rmp.css">
+  <link rel="stylesheet" href="/assets/site.css">
 </head>
 <body>
-  <main>
-    <div class="brand"><a href="/">Reunyt<span>.</span></a></div>
-
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="/" aria-label="Reunyt home"><svg viewBox="242 162 540 713" aria-hidden="true" focusable="false"><path transform="translate(-22 0)" fill-rule="evenodd" fill="#0F4C5C" d="M512 182 A228 228 0 0 0 316.2 526.82 L496.63 829.24 Q512 855 512 825 Z M512 322 A88 88 0 0 0 512 498 Z"/><path transform="translate(22 0)" fill-rule="evenodd" fill="#2E9C88" d="M512 182 A228 228 0 0 1 707.8 526.82 L527.37 829.24 Q512 855 512 825 Z M512 322 A88 88 0 0 1 512 498 Z"/></svg><span>reunyt</span></a>
+      <nav class="nav" aria-label="Main">
+        <a href="/#how">How it works</a>
+        <a href="/support/">Support</a>
+        <a href="/partners/">For organisations</a>
+      </nav>
+      <a class="btn btn-primary btn-sm header-cta" href="mailto:reunyt@edge.com.na">Contact us</a>
+      <details class="menu">
+        <summary aria-label="Menu"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></summary>
+        <nav class="menu-panel" aria-label="Menu">
+          <a href="/">Home</a>
+          <a href="/#how">How it works</a>
+          <a href="/support/">Support</a>
+          <a href="/partners/">For organisations</a>
+          <hr>
+          <a href="mailto:reunyt@edge.com.na">Contact us</a>
+        </nav>
+      </details>
+    </div>
+  </header>
+  <main id="main" class="doc">
     <h1>Terms of Use</h1>
     <p class="muted">Effective 8 November 2026</p>
 
@@ -262,10 +242,45 @@
     <p>Edge Technology Solutions (Pty) Ltd<br>
     Windhoek, Namibia<br>
     Email: <a href="mailto:reunyt@edge.com.na">reunyt@edge.com.na</a></p>
-
-    <footer>
-      <p class="muted"><a href="/">Reunyt</a> · <a href="/privacy/">Privacy</a> · Terms</p>
-    </footer>
   </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-top">
+        <div class="footer-about">
+          <a class="brand" href="/" aria-label="Reunyt home"><svg viewBox="242 162 540 713" aria-hidden="true" focusable="false"><path transform="translate(-22 0)" fill-rule="evenodd" fill="#0F4C5C" d="M512 182 A228 228 0 0 0 316.2 526.82 L496.63 829.24 Q512 855 512 825 Z M512 322 A88 88 0 0 0 512 498 Z"/><path transform="translate(22 0)" fill-rule="evenodd" fill="#2E9C88" d="M512 182 A228 228 0 0 1 707.8 526.82 L527.37 829.24 Q512 855 512 825 Z M512 322 A88 88 0 0 1 512 498 Z"/></svg><span>reunyt</span></a>
+          <p>Lost things, found again. Reunyt connects people who lose things with the people who find them. Coming soon to iPhone.</p>
+        </div>
+        <nav class="footer-col" aria-labelledby="f-reunyt">
+          <h2 id="f-reunyt">Reunyt</h2>
+          <a href="/#how">How it works</a>
+          <a href="/#privacy">Privacy first</a>
+          <a href="/partners/">For organisations</a>
+        </nav>
+        <nav class="footer-col" aria-labelledby="f-help">
+          <h2 id="f-help">Help</h2>
+          <a href="/support/">Support</a>
+          <a href="/support/#safety">Safety</a>
+          <a href="/support/#account">Delete your account</a>
+        </nav>
+        <nav class="footer-col" aria-labelledby="f-legal">
+          <h2 id="f-legal">Legal</h2>
+          <a href="/privacy/">Privacy Policy</a>
+          <a href="/terms/">Terms of Use</a>
+          <a href="mailto:reunyt@edge.com.na">reunyt@edge.com.na</a>
+        </nav>
+      </div>
+      <div class="footer-band">
+        <div>
+          <strong>Shelters, vets and lost-property desks</strong>
+          <span>We're building tools for places that take in found things and animals.</span>
+        </div>
+        <a class="btn btn-secondary btn-sm" href="/partners/">For organisations</a>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Edge Technology Solutions (Pty) Ltd</p>
+        <p>Reunyt is independent. It isn't run by the police or any government office.</p>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

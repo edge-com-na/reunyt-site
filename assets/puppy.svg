@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="A puppy wearing a Reunyt collar tag">
+  <title>A puppy wearing a Reunyt collar tag</title>
+  <ellipse cx="120" cy="224" rx="72" ry="8" fill="#0F2F36" opacity="0.08"/>
+  <path d="M166 186c30-4 40-30 30-52" fill="none" stroke="#C98B52" stroke-width="15" stroke-linecap="round"/>
+  <ellipse cx="120" cy="180" rx="52" ry="44" fill="#D9A36A"/>
+  <ellipse cx="120" cy="190" rx="27" ry="30" fill="#F4E2C8"/>
+  <ellipse cx="98" cy="217" rx="17" ry="9" fill="#F4E2C8"/>
+  <ellipse cx="142" cy="217" rx="17" ry="9" fill="#F4E2C8"/>
+  <path d="M93 214v6M100 214v6M137 214v6M144 214v6" stroke="#C98B52" stroke-width="2" stroke-linecap="round"/>
+  <rect x="80" y="134" width="80" height="13" rx="6.5" fill="#0F4C5C"/>
+  <svg x="111" y="144" width="18" height="24" viewBox="242 162 540 713">
+    <path transform="translate(-22 0)" fill-rule="evenodd" fill="#FFFFFF" d="M512 182 A228 228 0 0 0 316.2 526.82 L496.63 829.24 Q512 855 512 825 Z M512 322 A88 88 0 0 0 512 498 Z"/>
+    <path transform="translate(22 0)" fill-rule="evenodd" fill="#8ED8C8" d="M512 182 A228 228 0 0 1 707.8 526.82 L527.37 829.24 Q512 855 512 825 Z M512 322 A88 88 0 0 1 512 498 Z"/>
+  </svg>
+  <circle cx="120" cy="94" r="48" fill="#D9A36A"/>
+  <ellipse cx="141" cy="86" rx="15" ry="13" fill="#B97A45"/>
+  <path d="M84 62C58 56 50 104 64 126c8 12 24 2 26-20 1-14-1-30-6-44z" fill="#9C5F33"/>
+  <path d="M156 62c26-6 34 42 20 64-8 12-24 2-26-20-1-14 1-30 6-44z" fill="#9C5F33"/>
+  <circle cx="102" cy="92" r="7.5" fill="#0F2F36"/>
+  <circle cx="138" cy="92" r="7.5" fill="#0F2F36"/>
+  <circle cx="104.6" cy="89.4" r="2.4" fill="#FFFFFF"/>
+  <circle cx="140.6" cy="89.4" r="2.4" fill="#FFFFFF"/>
+  <ellipse cx="120" cy="118" rx="25" ry="19" fill="#F4E2C8"/>
+  <circle cx="91" cy="114" r="6" fill="#E9967A" opacity="0.45"/>
+  <circle cx="149" cy="114" r="6" fill="#E9967A" opacity="0.45"/>
+  <path d="M114 125q6 15 12 0z" fill="#E77F86"/>
+  <ellipse cx="120" cy="109" rx="9.5" ry="6.5" fill="#0F2F36"/>
+  <ellipse cx="117" cy="107" rx="3" ry="1.6" fill="#FFFFFF" opacity="0.6"/>
+  <path d="M120 115v6M120 121q-7 6-13 1M120 121q7 6 13 1" fill="none" stroke="#0F2F36" stroke-width="2.4" stroke-linecap="round"/>
+</svg>

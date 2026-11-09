@@ -406,3 +406,30 @@ p { margin: 0; }
 }
 .section-foot { display: flex; justify-content: center; margin-top: 28px; }
 .section-foot .pill { align-self: center; }
+
+/* Pets: the puppy */
+.pet-band {
+  margin-top: 16px; display: flex; align-items: center; gap: 24px;
+  background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 20px 24px;
+}
+.pet-img { flex: 0 0 auto; width: 140px; height: 140px; }
+.pet-copy { display: flex; flex-direction: column; gap: 8px; }
+.pet-copy p { color: var(--muted); font-size: 15px; line-height: 1.55; max-width: 640px; }
+.pet-copy a { font-size: 15px; font-weight: 600; align-self: flex-start; min-height: 32px; display: inline-flex; align-items: center; }
+@media (max-width: 560px) { .pet-band { flex-direction: column; align-items: flex-start; } .pet-img { width: 120px; height: 120px; } }
+.pet-hero { background: var(--tint); display: flex; justify-content: center; padding: 16px 0 0; border-bottom: 1px solid var(--line); }
+.pet-hero img { width: 180px; height: 180px; }
+.split-top { align-items: start; }
+.pet-side { width: 180px; height: 180px; margin-top: 8px; }
+@media (max-width: 900px) { .pet-side { display: none; } }
+.story { list-style: none; counter-reset: story; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 12px; }
+.story li {
+  counter-increment: story; position: relative; background: var(--bg); border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 18px 20px 18px 64px; display: flex; flex-direction: column; gap: 6px;
+}
+.story li::before {
+  content: counter(story); position: absolute; left: 20px; top: 18px; width: 28px; height: 28px; border-radius: 50%;
+  background: var(--teal); color: #FFFFFF; font-size: 14px; font-weight: 700; display: flex; align-items: center; justify-content: center;
+}
+.story p { color: var(--muted); font-size: 15px; line-height: 1.55; }
+.fineprint { margin-top: 24px; font-size: 13px; color: var(--muted); text-align: center; }

@@ -1,72 +1,99 @@
 <!doctype html>
-<html lang="en">
+<html lang="en-GB">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Email confirmed · Reunyt</title>
+  <meta name="description" content="Your Reunyt email address is confirmed.">
   <meta name="robots" content="noindex">
   <meta name="referrer" content="no-referrer">
-  <meta name="color-scheme" content="light dark">
-  <style>
-    :root {
-      --bg: #f6f4ef;
-      --fg: #1c1b19;
-      --muted: #6b675f;
-      --accent: #c2410c;
-      --ok: #15803d;
-      --warn: #b45309;
-    }
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg: #141311;
-        --fg: #f2efe8;
-        --muted: #a39e94;
-        --accent: #fb923c;
-        --ok: #4ade80;
-        --warn: #fbbf24;
-      }
-    }
-    * { box-sizing: border-box; }
-    html, body { height: 100%; margin: 0; }
-    body {
-      background: var(--bg);
-      color: var(--fg);
-      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      display: grid;
-      place-items: center;
-      padding: 24px 16px;
-    }
-    main { max-width: 30rem; text-align: center; }
-    .brand { font-weight: 700; letter-spacing: -0.02em; font-size: 1.25rem; margin-bottom: 2rem; }
-    .brand span { color: var(--accent); }
-    .mark { font-size: 3rem; line-height: 1; margin-bottom: 1rem; }
-    .ok .mark { color: var(--ok); }
-    .error .mark { color: var(--warn); }
-    h1 { font-size: 1.75rem; margin: 0 0 0.75rem; letter-spacing: -0.01em; }
-    p { margin: 0.5rem 0; font-size: 1.0625rem; line-height: 1.55; }
-    .muted { color: var(--muted); font-size: 0.95rem; }
-    [hidden] { display: none !important; }
-  </style>
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#0F4C5C">
+  <link rel="icon" href="/favicon.ico" sizes="48x48">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="https://use.typekit.net/akp5rmp.css">
+  <link rel="stylesheet" href="/assets/site.css">
 </head>
 <body>
-  <main>
-    <div class="brand">Reunyt<span>.</span></div>
-
-    <section id="success" class="ok">
-      <div class="mark" aria-hidden="true">✓</div>
-      <h1>Your email is confirmed</h1>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="/" aria-label="Reunyt home"><svg viewBox="242 162 540 713" aria-hidden="true" focusable="false"><path transform="translate(-22 0)" fill-rule="evenodd" fill="#0F4C5C" d="M512 182 A228 228 0 0 0 316.2 526.82 L496.63 829.24 Q512 855 512 825 Z M512 322 A88 88 0 0 0 512 498 Z"/><path transform="translate(22 0)" fill-rule="evenodd" fill="#2E9C88" d="M512 182 A228 228 0 0 1 707.8 526.82 L527.37 829.24 Q512 855 512 825 Z M512 322 A88 88 0 0 1 512 498 Z"/></svg><span>reunyt</span></a>
+      <nav class="nav" aria-label="Main">
+        <a href="/#how">How it works</a>
+        <a href="/support/">Support</a>
+        <a href="/partners/">For organisations</a>
+      </nav>
+      <a class="btn btn-primary btn-sm header-cta" href="mailto:reunyt@edge.com.na">Contact us</a>
+      <details class="menu">
+        <summary aria-label="Menu"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></summary>
+        <nav class="menu-panel" aria-label="Menu">
+          <a href="/">Home</a>
+          <a href="/#how">How it works</a>
+          <a href="/support/">Support</a>
+          <a href="/partners/">For organisations</a>
+          <hr>
+          <a href="mailto:reunyt@edge.com.na">Contact us</a>
+        </nav>
+      </details>
+    </div>
+  </header>
+  <main id="main" class="message">
+    <section id="success" class="message-card" aria-labelledby="success-title">
+      <span class="badge-round badge-ok" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>
+      <h1 id="success-title" style="font-size: 28px;">Your email is confirmed</h1>
       <p>Go back to the Reunyt app and sign in with your email and password.</p>
-      <p class="muted">You can close this page.</p>
+      <p class="small">You can close this page.</p>
     </section>
 
-    <section id="failure" class="error" hidden>
-      <div class="mark" aria-hidden="true">!</div>
-      <h1 id="failure-title">This link didn't work</h1>
-      <p id="failure-body">Open the Reunyt app, try to sign in, and tap Resend Email to get a new confirmation link.</p>
-      <p class="muted">Links expire after a while and can only be used once.</p>
+    <section id="failure" class="message-card" aria-labelledby="failure-title" hidden>
+      <span class="badge-round badge-warn" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M12 7v6M12 17h.01"/></svg></span>
+      <h1 id="failure-title" style="font-size: 28px;">This link didn't work</h1>
+      <p>Open the Reunyt app, try to sign in, and tap Resend Email to get a new confirmation link.</p>
+      <p class="small">Links expire after a while and can only be used once. Still stuck? <a href="/support/#account">Get support</a>.</p>
     </section>
   </main>
-
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-top">
+        <div class="footer-about">
+          <a class="brand" href="/" aria-label="Reunyt home"><svg viewBox="242 162 540 713" aria-hidden="true" focusable="false"><path transform="translate(-22 0)" fill-rule="evenodd" fill="#0F4C5C" d="M512 182 A228 228 0 0 0 316.2 526.82 L496.63 829.24 Q512 855 512 825 Z M512 322 A88 88 0 0 0 512 498 Z"/><path transform="translate(22 0)" fill-rule="evenodd" fill="#2E9C88" d="M512 182 A228 228 0 0 1 707.8 526.82 L527.37 829.24 Q512 855 512 825 Z M512 322 A88 88 0 0 1 512 498 Z"/></svg><span>reunyt</span></a>
+          <p>Lost things, found again. Reunyt connects people who lose things with the people who find them. Coming soon to iPhone.</p>
+        </div>
+        <nav class="footer-col" aria-labelledby="f-reunyt">
+          <h2 id="f-reunyt">Reunyt</h2>
+          <a href="/#how">How it works</a>
+          <a href="/#privacy">Privacy first</a>
+          <a href="/partners/">For organisations</a>
+        </nav>
+        <nav class="footer-col" aria-labelledby="f-help">
+          <h2 id="f-help">Help</h2>
+          <a href="/support/">Support</a>
+          <a href="/support/#safety">Safety</a>
+          <a href="/support/#account">Delete your account</a>
+        </nav>
+        <nav class="footer-col" aria-labelledby="f-legal">
+          <h2 id="f-legal">Legal</h2>
+          <a href="/privacy/">Privacy Policy</a>
+          <a href="/terms/">Terms of Use</a>
+          <a href="mailto:reunyt@edge.com.na">reunyt@edge.com.na</a>
+        </nav>
+      </div>
+      <div class="footer-band">
+        <div>
+          <strong>Shelters, vets and lost-property desks</strong>
+          <span>We're building tools for places that take in found things and animals.</span>
+        </div>
+        <a class="btn btn-secondary btn-sm" href="/partners/">For organisations</a>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Edge Technology Solutions (Pty) Ltd</p>
+        <p>Reunyt is independent. It isn't run by the police or any government office.</p>
+      </div>
+    </div>
+  </footer>
   <script>
     // Supabase redirects here after verifying the email. On failure it adds
     // error details to the URL (query string or fragment), e.g.
